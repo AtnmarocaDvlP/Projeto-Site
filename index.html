@@ -1,45 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SiteAlemaroca</title>
-    <link rel="stylesheet" href="estilos/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Currículo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main>
-        <header>
-            <h1> Melhores Animes para se ver</h1>
-            <img class="lado" src="Imagens e videos/jinwoo.jpg" alt="jinwoo">
-            <h2> Solo Leveling</h2>
-            <p1> Em um mundo onde portais liberam monstros e apenas os Caçadores podem enfrentá-los, Sung Jin-Woo é o mais fraco de todos. Mas quando uma missão secreta o coloca à beira da morte, ele desperta um sistema misterioso que o permite evoluir sem limites. Agora, de caçado a predador, ele trilha um caminho brutal e solitário rumo ao topo, tornando-se o ser mais poderoso que o mundo já viu!</p1>
-
-            <h2><a href="https://www.crunchyroll.com/pt-br/series/GDKHZEJ0K/solo-leveling?srsltid=AfmBOoqrpYRp3UNjAEjTfZsu7IH0K_FjnJ9KmCfgf3pyBXRn73lVmlm7">Para assistir Solo Leveling clique aqui</a></h2>
-            
-
-        </header>
-        <article>
-            <img class="lado" src="Imagens e videos/ৎ୭-🩰;.jpg" alt="">
-            <h2>Jujutsu Kaisen</h2>
-            <p>Quando Yuji Itadori ingere um dedo amaldiçoado de Sukuna, o Rei das Maldições, ele se torna um recipiente vivo para um dos seres mais perigosos da história. Agora, treinando como feiticeiro jujutsu, ele luta contra maldições monstruosas enquanto equilibra sua própria luta contra a consciência sádica de Sukuna dentro de si.</p>
-            <h2><a href="https://www.crunchyroll.com/pt-br/series/GRDV0019R/jujutsu-kaisen">Para assistir Jujutsu Kaisen clique aqui</a></h2>
-        </article>
-        <article>
-            <img class="lado" src="Imagens e videos/⋆ 𝘑𝘰𝘑𝘰_ ᴅɪᴏ ʙʀᴀɴᴅᴏ.jpg" alt="">
-            <h2>JOJO - Bizarre Adventures </h2>
-            <p>A rivalidade entre Dio Brando e a família Joestar atravessa gerações, começando com a obsessão de Dio em destruir Jonathan Joestar e alcançando até Jotaro Kujo, décadas depois. Com a Máscara de Pedra e os poderes dos Stands, Dio se torna uma ameaça imortal, e os Joestars precisam enfrentá-lo para impedir que sua ambição domine o mundo.</p>
-            <h2><a href="https://www.crunchyroll.com/pt-br/series/GYP8DP1MY/jojos-bizarre-adventure">Para assistir JOJO Bizarre Adventures clique aqui</a></h2>
-        </article>
-        <article>
-            <img class="lado" src="Imagens e videos/Eren jaeger _ ICONS.jpg" alt="">
-            <h2>Attack on Titan</h2>
-            <p>A humanidade está encurralada dentro de muralhas gigantescas, aterrorizada por Titãs que devoram tudo em seu caminho. Quando a cidade de Eren Yeager é destruída e sua mãe morta, ele jura exterminar todas essas criaturas. Mas conforme descobre segredos sombrios sobre os Titãs e as próprias muralhas, Eren percebe que a verdadeira ameaça pode estar muito além do que ele imaginava…</p>
-            <h2><a href="https://www.crunchyroll.com/pt-br/series/GR751KNZY/attack-on-titan">Para assistir Attack on Titan clique aqui</a></h2>
-        </article>
-
-        <H1>Curtiu? Assite eu tocando Never met to belong</H1>
-        <iframe src="Imagens e videos/Vídeo sem título ‐ Feito com o Clipchamp (1).mp4" frameborder="0"></iframe>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile-pic"><img src="sua-foto.jpg" alt="Sua Foto"></div>
+      <h2>Antônio Maroca Amarante Pinto Coelho</h2>
+      <p class="sobre">
+        My name is Antonio Maroca, I am a student of Software Analysis and Development, and I am seeking knowledge in all areas of programming.
+      </p>
+      <div class="localizacao">
+        <p>Localização: Viçosa, MG</p>
+        <p>Idade: <span id="idade">—</span> anos</p>
+      </div>
+      <div class="contato">
+        <p>Email: AntonioAlemaroca@gmail.com</p>
+        <p>telefone de contato: (31) 99660-3037</p>
+      </div>
+      <div class="redes">
+        <a href="#">GitHub</a><br>
+        <a href="#">LinkedIn</a>
+      </div>
+    </aside>
+    <main class="main-content">
+      <section class="conhecimento">
+        <h2>Conhecimentos</h2>
+        <ul>
+          <li>HTML5 / CSS3 / JS (ES6+)</li>
+          <li>React, Vue.js</li>
+          <li>SCSS / Responsive</li>
+        </ul>
+      </section>
+      <section class="projetos">
+        <h2>Projetos</h2>
+        <div class="projeto">
+          <h3>Projeto 1</h3>
+          <p>Descrição do projeto com <a href="#">link</a>.</p>
+        </div>
+      </section>
     </main>
-    
+  </div>
+  <script>
+    // Insira aqui sua data de nascimento no formato AAAA-MM-DD
+    const dataNascimento = new Date('2006-06-15');
+    const hoje = new Date();
+    let idade = hoje.getFullYear() - dataNascimento.getFullYear();
+
+    const mesDiff = hoje.getMonth() - dataNascimento.getMonth();
+    if (mesDiff < 0 || (mesDiff === 0 && hoje.getDate() < dataNascimento.getDate())) {
+      idade--;
+    }
+
+    document.getElementById('idade').textContent = idade;
+  </script>
+
+  <!-- Seu script.js adicional, se houver -->
+  <script src="script.js"></script>
 </body>
 </html>
