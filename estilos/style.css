@@ -47,4 +47,10 @@ body, html { height:100%; font-family: Arial, sans-serif; background:#121212; co
   .container { flex-direction:column; }
   .sidebar, .main-content { flex:none; width:100%; }
 }
+.icone {
+  width: 20px;
+  height: 20px;
+  vertical-align: -2px;  /* Alinha a imagem ao meio da linha do texto */
+  margin-left: -5px;        /* Espaço entre o texto e a imagem */
+}
 
