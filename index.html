@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu Currículo</title>
   <link rel="stylesheet" href="estilos/style.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <aside class="sidebar">
-      <div class="profile-pic"><img src="Imagens e videos/jinwoo.jpg" alt="minha foto"></div>
+      <div class="profile-pic">
+           <img src="Imagens e videos/jinwoo.jpg" alt="minha foto">
+      </div>
       <h2>Antônio Maroca Amarante Pinto Coelho</h2>
       <p class="sobre">
        Meu nome é Antônio Maroca,sou estudante de Análise e Desenvolvimento de Sistemas no Centro Universitário de Viçosa (Univiçosa).
@@ -37,7 +40,7 @@
         </a><br>
      </div>
     </aside>
-    <main class="main-content">
+    <main class="main-content" data-aos="fade-up">
       <section class="conhecimento">
         <h2>Conhecimentos</h2>
         <ul>
@@ -63,11 +66,19 @@
           </ul>
 
       </section>
-      <section class="projetos">
+      <section class="projetos" data-aos="fade-up">
         <h2>Projetos</h2>
         <div class="projeto">
-          <h3>Projeto 1</h3>
-          <p>Meu primeiro projeto foi desenvolvido no segundo periodo do.</p>
+          <h3>Site para construtora</h3>
+          <p>Projeto acadêmico com duração de 6 meses. Encerrado antecipadamente após mudanças na equipe,
+             mas proporcionou valiosa experiência prática em FIGMA e logica de programação </p> <br>
+
+             <p> o projeto consistia em um desenvolvimento de um site para uma construtora conhecida de uma cidade vizinha, fizemos a landing page e a tela de login que 
+              seria usada pelos clientes para acessar o site, foi usado apenas o figma para a criação do layout.</p>
+            <div class="imagensprojeto">
+              <img src="Imagens e videos/versatil1.jpeg" alt="versatil1">
+              <img src="" alt="">
+             </p>
         </div>
       </section>
     </main>
@@ -86,7 +97,13 @@
     document.getElementById('idade').textContent = idade;
   </script>
 
-  <!-- Seu script.js adicional, se houver -->
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+   AOS.init({
+    once: true,
+    duration: 1200, // duração da animação em milissegundos
+   });
+</script>
 </body>
 </html>
