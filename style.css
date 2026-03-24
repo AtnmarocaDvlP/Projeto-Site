@@ -196,12 +196,13 @@ img { display: block; max-width: 100%; }
 }
 
 .hero-name {
-  font-family: var(--font-head);
-  font-size: clamp(2rem, 5.5vw, 3.4rem);
-  font-weight: 800;
+  font-family: 'Archivo', 'Sequel', var(--font-head);
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  font-weight: 900;
   letter-spacing: -1.5px;
   line-height: 1.05;
   margin-bottom: 0.6rem;
+  text-transform: uppercase;
 }
 
 .hero-title {
